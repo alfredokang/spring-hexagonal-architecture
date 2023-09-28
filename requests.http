@@ -1,0 +1,32 @@
+GET http://localhost:8080/api/user/45a15c71-3d32-40f7-8942-8fe7b8326b1c
+Accept: application/json
+
+###
+GET http://localhost:8080/api/user?pagesize=10&page=1
+Accept: application/json
+
+###
+POST http://localhost:8080/api/user/register
+Content-Type: application/json
+
+{
+  "name": "",
+  "mobile": "(11) 96781-1450",
+  "email": "simon@icloud.com"
+}
+
+###
+PUT http://localhost:8080/api/user/45a15c71-3d32-40f7-8942-8fe7b8326b1c
+Content-Type: application/json
+
+{
+  "name": "Mario Queiroz",
+  "mobile": "(11) 96781-1450",
+  "email": "mario10@icloud.com"
+}
+
+###
+DELETE http://localhost:8080/api/user/fd33b651-8c16-417b-9315-7b9550596bfe
+Accept: application/json
+
+
